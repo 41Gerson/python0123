@@ -4,6 +4,8 @@ Nombre: Gerson Jhair Vasquez Inga
 
 #Pregunta 1:
 
+print("****PREGUNTA 1****")
+
 print("Menu de opciones")
 print("1-Dibujar un cuadrado")
 print("2-Multiplos de 2")
@@ -53,10 +55,9 @@ while(opcion!=0):
     opcion=int(input("Ingrese una opcion del menu: "))
 
 
-
-
-
 #Problema 2
+
+print("****PREGUNTA 2*****")
 
 biblioteca ={
     'libros':{
@@ -67,7 +68,8 @@ biblioteca ={
     'Romeo y Julieta':'William Shakespeare'
     },
     'categorias':['comedia','tragedia','novela','drama'],
-    'usuarios':['722','723','724','725']
+    'usuarios':['Javier','Juan','Gereny','Andres'],
+    'estado':['usado','usado','usado','usado']
 }
 
 print("Categorias de los libros: ")
@@ -81,9 +83,20 @@ print(biblioteca['libros'].values())
 print("Usuarios de la biblioteca: ")
 print(biblioteca['usuarios'])
 
+print("Actualizar el estado de libros")
+for i in range(1,5):
+    print("Estado de libro ",i)
+    biblioteca['estado'][i-1]=input("")
+    print(biblioteca['estado'][i-1])
+for i in range(1,5):
+    print("Estado actual de libro ",i)
+    print(biblioteca['estado'][i-1])
 
 
 #Pregunta 3
+
+print("*****PREGUNTA 3*****")
+
 def numMayor(num1,num2):
     if num1>num2:
         return num1
@@ -95,10 +108,17 @@ numero2=input("Ingrese el segundo numero: ")
 print("El numero mayor es: ",numMayor(numero1,numero2))
 
 
-#Pregunta 4 
+#Pregunta 4
+
+print("****PREGUNTA 4****")
+
 import sys
-contador = 0
-for i in sys.argv:
-    contador = contador +1
-    print("Argumento {}: {}".format(contador,i))
+argumentos=sys.argv
+print(type(argumentos))
+
+def leerArgumentos(*args):
+    for arg in args:
+        print(arg)
+leerArgumentos(*argumentos)
+
 

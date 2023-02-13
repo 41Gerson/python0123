@@ -1,5 +1,5 @@
 '''
-Nombre: Gerson Jhair Vasquez Inga
+Alumno: Gerson Jhair Vasquez Inga
 '''
 
 '''
@@ -54,7 +54,11 @@ valor1 = int(input("Ingrese el primer valor: "))
 valor2 = int(input("Ingrese el segundo valor: "))
 valor3 = int(input("Ingrese el tercer valor: "))
 
-print("Suma: ",valor1+valor2+valor3)
+
+print("Suma v1+v2: ",valor1+valor2)
+print("Suma v2+v3: ",valor2+valor3)
+print("Suma v3+v1: ",valor3+valor1)
+print("Suma total: ",valor1+valor2+valor3)
 
 print("Resta v1-v2: ",valor1-valor2)
 print("Resta v2-v3: ",valor2-valor3)
@@ -65,9 +69,9 @@ print("Multiplicacion v2-v3: ",valor2*valor3 )
 print("Multiplicacion v3-v1: ",valor3*valor1 )
 print("Multiplicacion v1-v2-v3: ",valor1*valor2*valor3 )
 
-print("Division v1-v2: ",valor1/valor2)
-print("Division v2-v3: ",valor2/valor3)
-print("Division v3-v1: ",valor3/valor1)
+print("Division v1/v2: ",valor1/valor2)
+print("Division v2/v3: ",valor2/valor3)
+print("Division v3/v1: ",valor3/valor1)
 
 print("Division entera v1-v2: ",valor1//valor2)
 print("Division entera v2-v3: ",valor2//valor3)
@@ -89,7 +93,7 @@ trabajando.
 print("PREGUNTA 5")
 import sys
 variable =sys.argv[0]
-print(variable)
+print("Ubicacion del archivo",variable)
 
 '''
 Pregunta 6 
@@ -100,7 +104,7 @@ numero = int(input("Ingrese un numero: "))
 suma_numeros = 0
 for i in range(1,numero+1):
     suma_numeros = suma_numeros+i
-print("La suma total es: ",suma_numeros)
+print("La suma total del ","1"," al ",numero,"es: ",suma_numeros)
 
 '''
 Pregunta 7 
